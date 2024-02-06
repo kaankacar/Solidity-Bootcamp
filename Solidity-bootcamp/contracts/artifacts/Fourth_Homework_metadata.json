@@ -1,0 +1,257 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_approve",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_reject",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_pass",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_total_vote_to_end",
+						"type": "uint256"
+					}
+				],
+				"name": "create",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCurrentProposal",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "approve",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reject",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "pass",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "total_vote_to_end",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "current_state",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "is_active",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Fourth_Homework.Proposal",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					}
+				],
+				"name": "getProposal",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "approve",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reject",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "pass",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "total_vote_to_end",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "current_state",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "is_active",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Fourth_Homework.Proposal",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "isVoted",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "teminateProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "choice",
+						"type": "uint8"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Fourth_Homework.sol": "Fourth_Homework"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Fourth_Homework.sol": {
+			"keccak256": "0x90341aa32169d2fa26d13eba4512de8ecd6262ea380da65f535f0c5ac14e0572",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://37b8ee907b0883c7565af39f5fff6590d1285c92e384425d57ef8e01a6cec57f",
+				"dweb:/ipfs/QmQeFzx3ixVoTJZuWbLtXvPhTEHXWq9okjMUXzTFzm9RFM"
+			]
+		}
+	},
+	"version": 1
+}

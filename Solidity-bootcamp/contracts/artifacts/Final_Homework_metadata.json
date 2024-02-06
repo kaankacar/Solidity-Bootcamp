@@ -1,0 +1,213 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_total_vote_to_end",
+						"type": "uint256"
+					}
+				],
+				"name": "createProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCurrentProposal",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "approve",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reject",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "pass",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "total_vote_to_end",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "is_active",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Final_Homework.Proposal",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					}
+				],
+				"name": "getProposal",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "approve",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "reject",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "pass",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "total_vote_to_end",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "is_active",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Final_Homework.Proposal",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "terminateProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "choice",
+						"type": "uint8"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Final_Homework.sol": "Final_Homework"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Final_Homework.sol": {
+			"keccak256": "0x5391d144b7d4acc48206b72b08b24f1ef98a9145ae927241aaa6808bfb1fd6ad",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7ac749bb735e2095ab543cc54ea85b66872b172f1899e54dfe92355ba57bfabb",
+				"dweb:/ipfs/QmXyooVSkKPY1RhjmQw5pHTBcPBxYJ73fhLoaa4WVMtMcq"
+			]
+		}
+	},
+	"version": 1
+}
